@@ -1,0 +1,18 @@
+* {
+  /* デフォルトをリセット */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0.2em 0.2em 0.2em 0.5em;
+  min-height: 100vh;
+  /*   */
+  display: grid;
+  /* 大枠を作るときのプロパティ */
+  grid-template:
+    'header'
+    /* mainゾーンの比率を調整*/
+    'main' 1fr
+    'footer';
+}
