@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sanitize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="c130.css" />
+    <title>footerの作成</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerFront">
+        <div class="headerA">
+          <p class="logo">TravelMemo</p>
+          <p class="descA">思い出に残った旅先の記録</p>
+        </div>
+        <div class="headerB">
+          <ul id="headerBmenu">
+            <li>
+              <a href="" class="btn-square-pop">指宿</a>
+            </li>
+            <li><a href="" class="btn-square-pop">博多</a></li>
+            <li><a href="" class="btn-square-pop">大分</a></li>
+          </ul>
+        </div>
+        <div class="headerC">
+          <p>詳細</p>
+          <button type="button" class="humbergerC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="headerBack">
+        <p id="tojiru">×閉じる</p>
+        <ul>
+          <li>
+            <a href="https://searchman.info/p_touroku.html">メルマガ</a>
+          </li>
+          <li>
+            <a href="https://searchman.info/sub.html">連絡</a>
+          </li>
+          <li><a href="https://searchman.info/intro.html">特定商取引</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>鹿児島県指宿市</h1>
+
+      <!-- 概要 -->
+      <article>
+        <h2>市の概要</h2>
+        <p>
+          鹿児島県指宿市は、鹿児島県薩摩半島の南端にある市です。<br />
+          38,655人; （推計人口、2020年11月1日）
+        </p>
+        <p>
+          世界的に珍しい天然の<strong class="red">砂蒸し温泉</strong
+          >が有名で、<br />
+          それを目的にする観光客も多い(サーチマンも行きした)。
+        </p>
+        <p>
+          また、<strong class="blue">開聞岳</strong
+          >は、別名薩摩富士とも呼ばれ、<br />
+          まさに指宿のシンボルと言うにふさわしい美しい山です。
+        </p>
+      </article>
+
+      <!-- いぶすきゴルフクラブ  -->
+      <section class="p1">
+        <h3>いぶすきゴルフクラブ</h3>
+        <p>
+          指宿市には、超有名なゴルフ場があります。<br />
+          <strong class="red">いぶすきゴルフクラブ</strong>です。
+        </p>
+        <p>
+          タイガーウッズもここでプレーしましたし、<br />
+          2019年には日本プロゴルフ選手権が開催され、<br />
+          <strong class="yellow">石川遼</strong>選手が優勝しました。
+        </p>
+      </section>
+
+      <!-- 写真  -->
+      <section class="p1">
+        <h3>写真</h3>
+        <p>
+          <strong class="blue">開聞岳</strong>と
+          <strong class="red">いぶすきゴルフクラブ</strong>の写真です。<br />
+          数年前、サーチマンが旅行に行って撮ってきました。
+        </p>
+
+        <p class="bottom"><strong class="blue">開聞岳</strong>です。</p>
+        <img src="img/kaimon.jpg" alt="開聞岳の写真です" />
+
+        <p class="bottom">
+          次は、<strong class="red">いぶすきゴルフクラブ</strong>です。
+        </p>
+        <img src="img/ibusuki.jpg" alt="いぶすきゴルフクラブ" />
+      </section>
+
+      <!-- footerには記載せずメインに記載 -->
+      <!-- 下段のメニュー  -->
+      <div id="bottomnavi">
+        <ul>
+          <li>
+            <a href="https://searchman.info/index.html">＜＜SearchManトップ</a>
+          </li>
+          <li>
+            <a href="https://searchman.info/java_eclipse/1010.html"
+              >Javaの環境構築＞＞</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- footerはメインから外だしして著作権などの文言の身入れるのがベターらしい -->
+    <footer>
+      <div class="copy">
+        <p>Copyright(c) 2005-2021 SearchMan Sato . All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="humberger.js"></script>
+  </body>
+</html>
