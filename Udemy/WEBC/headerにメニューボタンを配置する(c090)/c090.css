@@ -71,21 +71,58 @@ img {
   max-width: 80%;
 }
 
-/* 写真と説明文の隙間を調整 */
 main p.bottom {
   /*ボトムを詰める時*/
-  /* 余白を削除する */
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* headerのタグ */
+/* --------------------ヘッダーのタグ-------------------- */
 header {
-  background-color: aquamarine;
+  background-color: #e6e6e6; /* 背景色 */
 }
 
-/* headerABCを縦並びにする */
+/* headerA,B,Cを横並びにする */
 .headerFront {
   display: flex;
   justify-content: space-between;
+}
+
+header p.logo {
+  font-family: 'Josefin Sans', cursive;
+  font-size: 2em; /*文字の大きさ */
+  padding-top: 10px; /*トップの余白 */
+  text-decoration: underline; /*アンダーライン */
+  color: #00bbcc; /* 文字色 */
+}
+
+header p.descA {
+  color: #0000cc; /* 文字色 */
+  font-size: 11px; /* 文字の大きさ */
+  font-family: '  DotGothic16', cursive;
+}
+
+.headerB {
+  margin-top: 30px;
+}
+
+/* IDを持つ要素のCSSを編集する時はシャープを付ける */
+#headerBmenu li {
+  display: inline-block; /* インラインブロック要素 */
+  padding: 0.3em; /* ボタンの間隔をあける */
+}
+
+/* headerBのメインボタンデザイン */
+.btn-square-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: #fd9535; /*背景色*/
+  border-bottom: solid 2px #d27d00; /*少し濃い目の色に*/
+  border-radius: 4px; /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2),
+    0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
 }

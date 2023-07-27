@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sanitize.css" />
-    <link rel="stylesheet" href="c070.css" />
-    <title>headerの大枠を作成</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="c090.css" />
+    <title>メニューボタンを作る</title>
   </head>
   <body>
-    <header>ヘッダーです</header>
+    <header>
+      <div class="headerFront">
+        <div class="headerA">
+          <p class="logo">TravelMemo</p>
+          <p class="descA">思い出に残った旅先の記録</p>
+        </div>
+        <!-- 箇条書きを作る時はulとliを使う -->
+        <div class="headerB">
+          <ul id="headerBmenu">
+            <li>
+              <a href="" class="btn-square-pop">指宿</a>
+            </li>
+            <li>
+              <a href="" class="btn-square-pop">博多</a>
+            </li>
+            <li>
+              <a href="" class="btn-square-pop">大分</a>
+            </li>
+          </ul>
+        </div>
+        <div class="headerC">headerC</div>
+      </div>
+    </header>
     <main>
       <h1>鹿児島県指宿市</h1>
 
@@ -55,8 +84,6 @@
         </p>
 
         <p class="bottom"><strong class="blue">開聞岳</strong>です。</p>
-        <!-- 画像を埋め込むタグ
-        altは写真の説明を記載する（SEOの観点からも説明を入れておくのが無難）-->
         <img src="img/kaimon.jpg" alt="開聞岳の写真です" />
 
         <p class="bottom">
