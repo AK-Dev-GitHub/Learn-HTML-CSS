@@ -1,0 +1,128 @@
+* {
+  /* デフォルトをリセット */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0.2em 0.2em 0.2em 0.5em;
+  min-height: 100vh;
+  /*   */
+  display: grid;
+  grid-template:
+    'header'
+    'main' 1fr
+    'footer';
+}
+
+/* 見出しタグ */
+h1 {
+  margin-top: 0.2em; /*トップ余白*/
+  text-align: center; /*テキストの位置*/
+  border: solid 3px #333333; /*線の形状、太さ、色*/
+  padding: 0.1em; /*文字周りの余白*/
+  border-radius: 0.5em; /*角の丸み*/
+}
+
+/* 記事や文章のタグ */
+article {
+  padding: 0.5em; /*余白*/
+  background-color: #ffc; /*背景色*/
+  border: solid 1px #333333; /*境界線 太さ 色*/
+  border-radius: 0.5em; /*角の丸み*/
+}
+
+/* 小見出しタグ */
+main h2,
+h3 {
+  border-bottom: solid 1px black; /*底の線、太さ、色*/
+  padding-left: 1em; /*左の余白*/
+}
+
+main p {
+  margin-top: 1em; /*トップ余白*/
+  margin-bottom: 0.5em; /*ボトム余白*/
+}
+
+strong.red {
+  color: red;
+}
+
+strong.blue {
+  color: blue;
+}
+
+section.p1 {
+  margin-top: 1em; /*トップ余白*/
+  padding: 0.5em; /*余白*/
+  background-color: #e6e6e6; /*背景色*/
+  border: solid 1px #333333; /*境界線 太さ 色*/
+  border-radius: 0.5em; /*角の丸み*/
+}
+
+strong.yellow {
+  background: linear-gradient(transparent 0%, #f6ff5f 0%);
+}
+
+img {
+  /*画像の大きさ指定*/
+  margin: 0;
+  padding: 0;
+  max-width: 80%;
+}
+
+main p.bottom {
+  /*ボトムを詰める時*/
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* --------------------ヘッダーのタグ-------------------- */
+header {
+  background-color: #e6e6e6; /* 背景色 */
+}
+
+/* headerA,B,Cを横並びにする */
+.headerFront {
+  display: flex;
+  justify-content: space-between;
+}
+
+header p.logo {
+  font-family: 'Josefin Sans', cursive;
+  font-size: 2em; /*文字の大きさ */
+  padding-top: 10px; /*トップの余白 */
+  text-decoration: underline; /*アンダーライン */
+  color: #00bbcc; /* 文字色 */
+}
+
+header p.descA {
+  color: #0000cc; /* 文字色 */
+  font-size: 11px; /* 文字の大きさ */
+  font-family: '  DotGothic16', cursive;
+}
+
+.headerB {
+  margin-top: 30px;
+}
+
+/* IDを持つ要素のCSSを編集する時はシャープを付ける */
+#headerBmenu li {
+  display: inline-block; /* インラインブロック要素 */
+  padding: 0.3em; /* ボタンの間隔をあける */
+}
+
+/* headerBのメインボタンデザイン */
+.btn-square-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: #fd9535; /*背景色*/
+  border-bottom: solid 2px #d27d00; /*少し濃い目の色に*/
+  border-radius: 4px; /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2),
+    0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
