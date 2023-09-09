@@ -1,0 +1,27 @@
+コンポーネントにわけているCCSは画面にまとめて吐き出さなくてはならない→バラバラのCSS一つにまとめて吐き出す仕組みがある
+
+・エラー事例１
+前提条件:appフォルダ直下のglobal.cssにTailWindCSSをimportし→Page.tsxに適応させていた
+
+エラーが起こった原因:ディレクトリ変更によりappフォルダの上にsrcフォルダを格納したところ、TailWindCSSが適応されなくなってしまった。
+
+
+解決方法: tailwind.config.tsのcontentディレクトリに追加したsrcフォルダを追加
+
+変更前
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+
+
+
+変更後
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
