@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lazy Loading Example</title>
+  </head>
+  <body>
+    <h1>遅延読み込みの例</h1>
+
+    <!-- 遅延読み込みされる画像 -->
+    <img src="placeholder.jpg" alt="遅延読み込みされる画像" loading="lazy" />
+
+    <!-- 通常の即時読み込み画像 -->
+    <img src="normal.jpg" alt="通常の即時読み込み画像" />
+
+    <!-- 遅延読み込みされる iframe（例） -->
+    <iframe
+      src="https://www.example.com"
+      title="遅延読み込みされる iframe"
+      loading="lazy"
+    ></iframe>
+
+    <!-- 遅延読み込みの時間指定（1000ミリ秒 = 1秒） -->
+    <img
+      src="delayed.jpg"
+      alt="1秒後に読み込み"
+      loading="lazy"
+      data-delay="1000"
+    />
+
+    <!-- JavaScriptを使用して遅延読み込みを制御 -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const delayedImages = document.querySelectorAll(
+          '[loading="lazy"][data-delay]'
+        );
+        delayedImages.forEach(function (img) {
+          const delayTime = parseInt(img.getAttribute('data-delay'));
+          setTimeout(function () {
+            img.setAttribute('src', img.getAttribute('src'));
+          }, delayTime);
+        });
+      });
+    </script>
+  </body>
+</html>

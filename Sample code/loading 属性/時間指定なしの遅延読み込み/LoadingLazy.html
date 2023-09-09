@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lazy Loading Example</title>
+  </head>
+  <body>
+    <h1>画像を遅延読み込み</h1>
+
+    <!-- 画像を遅延読み込み -->
+    <img src="LazySample.jpg" alt="" loading="lazy" />
+
+    <!-- テキストコンテンツ -->
+    <p>このテキストは通常通り読み込まれますNN。</p>
+
+    <h1>動画を遅延読み込み</h1>
+    <!-- 埋め込み動画を遅延読み込み -->
+    <iframe
+      src="https://www.youtube.com/embed/your-video-id"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+
+    <!-- 他のコンテンツ -->
+    <div>
+      <h1>動画を通常速度で読み込み</h1>
+      <iframe
+        src="https://www.youtube.com/embed/your-video-id"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </body>
+</html>
