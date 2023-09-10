@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lazy Loading Example</title>
+  </head>
+  <body>
+    <div>
+      <h1>ブラウザ</h1>
+      <!-- 実験したところ速度指定せずブラウザの読み込みに任せるコードが一番早くコンテンツを読み込んだ -->
+      <iframe
+        src="https://www.youtube.com/embed/your-video-id"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <h1>動画を遅延読み込み</h1>
+    <!-- 埋め込み動画を遅延読み込み -->
+    <iframe
+      src="https://www.youtube.com/embed/your-video-id"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+    <h1>動画を早速度読み込み</h1>
+    <!-- 埋め込み動画の読み込み速度を速める -->
+    <iframe
+      src="https://www.youtube.com/embed/your-video-id"
+      frameborder="0"
+      allowfullscreen
+      loading="eager"
+    ></iframe>
+  </body>
+</html>
