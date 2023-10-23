@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.copyright {
+  /* 文字色変更 */
+  color: aliceblue;
+  /* 文字を中央に配置する */
+  text-align: center;
+}
+
+#footer01 {
+  position: relative;
+  background: #222;
+}
+
+#footer01 .nav a {
+  display: block;
+  padding: 0 10px;
+  color: #ccc;
+}
+
+@media only screen and (min-width: 641px) {
+  #footer01 .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  #footer01 .nav a:hover {
+    color: #ca353b;
+  }
+}
