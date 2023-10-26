@@ -1,0 +1,19 @@
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.num {
+  font-weight: 900;
+}
