@@ -26,3 +26,11 @@ h1:after {
 .span-color {
   color: rgb(255, 1, 1);
 }
+
+/* テキスト線ブロック装飾 */
+.under-line {
+  text-decoration: underline; /* 下線 */
+}
+.line-through {
+  text-decoration: line-through; /* 下線 */
+}
