@@ -27,6 +27,13 @@ h1:after {
   color: rgb(255, 1, 1);
 }
 
+/* スクロールバー */
+#wrapper {
+      height: 200px;
+      width: 300px;
+      overflow-y: scroll;
+    }
+
 /* テキスト線ブロック装飾 */
 .under-line {
   text-decoration: underline; /* 下線 */
@@ -34,3 +41,4 @@ h1:after {
 .line-through {
   text-decoration: line-through; /* 下線 */
 }
+
