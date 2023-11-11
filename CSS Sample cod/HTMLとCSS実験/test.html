@@ -6,18 +6,11 @@
     <link rel="stylesheet" href="test.css" />
     <title>HTMLとCSSの実験場</title>
   </head>
-  <body>
-    <h1>
-      ここはHTMLとCSSを<span class="span-color">学習するためのページ</span
-      >です。n
-    </h1>
+  <body id="wrapper">
     <!-- 文字装飾ブロック -->
     <!-- タグの中にスタイルを書き込む例↓ -->
-
-    <div id="wrapper"></div>
-
-
-    <div class="text-line"
+    <div
+      class="text-line"
       style="
         border-radius: 10px;
         border: 4px double #e066ff;
@@ -26,9 +19,9 @@
       "
     >
       <h2>text-decoration:テキストを線で装飾する</h2>
-      <ul>
-        <li class="under-line">アンダーライン</li>
-        <li class="line-through">打消し線</li>
+      <ul class="text-decoration-block">
+        <li id="under-line">アンダーライン</li>
+        <li id="line-through">打消し線</li>
       </ul>
     </div>
   </body>

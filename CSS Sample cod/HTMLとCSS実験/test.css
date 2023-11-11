@@ -29,16 +29,20 @@ h1:after {
 
 /* スクロールバー */
 #wrapper {
-      height: 200px;
-      width: 300px;
-      overflow-y: scroll;
-    }
+  margin-right: calc(100vw - 100%);
+  overflow-y: scroll;
+  /* position: fixed;
+  right: 0px; */
+}
 
 /* テキスト線ブロック装飾 */
-.under-line {
-  text-decoration: underline; /* 下線 */
-}
-.line-through {
-  text-decoration: line-through; /* 下線 */
+.text-decoration-block {
+  width: 300px;
 }
 
+#under-line {
+  text-decoration: underline; /* 下線 */
+}
+#line-through {
+  text-decoration: line-through; /* 下線 */
+}
