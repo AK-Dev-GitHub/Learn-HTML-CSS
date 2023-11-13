@@ -1,3 +1,9 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 /* header大枠 */
 .header {
   background: #585eaa;
@@ -7,8 +13,8 @@
   right: 0;
 }
 .header-title {
-  color: #333;
-  font-size: 24px;
+  color: white;
+  font-size: 25px;
   font-weight: bold;
 }
 /* headerリンク装飾 */
@@ -17,34 +23,23 @@
   color: white;
   margin-left: 20px;
 }
-/* リストのリンクを横並びにする */
 ul {
   display: flex;
-  text-align: center;
+  /* リストの「・」を非表示にするプロパティ */
+  list-style: none;
 }
 li {
-  display: inline-block;
-  list-style: none;
+  margin-right: 20px;
 }
 
 /* フッターエリア */
 footer {
   width: 100%;
-  height: 100px;
+  text-align: center;
   background-color: #585eaa;
   color: white;
-  text-align: center;
   font-weight: bold;
   /* フッターを画面最下層部に固定 */
   position: fixed;
   bottom: 0px;
-}
-ul.footer-menu li {
-  display: inline;
-}
-
-/* スクロールバー */
-#wrapper {
-  margin-right: calc(100vw - 100%);
-  overflow-y: scroll;
 }
