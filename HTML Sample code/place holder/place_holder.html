@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="place_holder.css" />
+    <title>Place Holderサンプル</title>
+  </head>
+  <body>
+    <!-- 学び→formを作成する時はformタグ内にdivやinput属性を書く -->
+    <form>
+      <h1>お問合せフォーム</h1>
+      <div class="items">
+        <div class="item">
+          <label>お名前：</label>
+          <!-- placeholderを使用するときはinput属性内に指定する -->
+          <input type="text" name="name" placeholder="山田 花子" />
+        </div>
+        <div class="item">
+          <label>お電話番号：</label>
+          <input type="tel" name="tel" placeholder="0120-○○-○○○○" />
+        </div>
+        <div class="item">
+          <label>メールアドレス：</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="hanako_yamada.@gmail.com"
+          />
+        </div>
+        <div class="item">
+          <label>お問合せ内容：</label>
+          <!-- テキストエリア内にplaceholderタグをうめこんでみたが表示された -->
+          <textarea placeholder="備考"></textarea>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
