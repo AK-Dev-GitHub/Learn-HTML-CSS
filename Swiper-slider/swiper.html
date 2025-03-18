@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- SwiperのCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="swiper card-swiper" id="card-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード1のタイトル</h2>
+              <p class="card__text">内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード2のタイトル</h2>
+              <p class="card__text">内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード3のタイトル</h2>
+              <p class="card__text">
+                内容内容内容内容内容内容内容内容内容内容内容内容
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード4のタイトル</h2>
+              <p class="card__text">内容内容内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード5のタイトル</h2>
+              <p class="card__text">内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード6のタイトル</h2>
+              <p class="card__text">内容内容内容内容内容</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card__body">
+              <h2 class="card__title">カード7のタイトル</h2>
+              <p class="card__text">内容</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </body>
+  <style>
+    * {
+      color: #333;
+    }
+
+    .l-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #f5f5f5;
+      border: solid 1px #333;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card__title {
+      border-bottom: solid 1px #333;
+    }
+  </style>
+  <!-- SwiperのJS（CDN） -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cardSwiper = new Swiper('#card-swiper', {
+        loop: true,
+        slidesPerView: 2.5,
+        centeredSlides: true,
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          depth: 500,
+          stretch: 30,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+</html>
+https://zenn.dev/928sekine/articles/6fa1e57dfdf09e
